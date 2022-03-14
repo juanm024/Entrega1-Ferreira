@@ -1,0 +1,19 @@
+{% extends 'index/index.html' %}
+
+{% block "body_1" %}
+
+    <H2>
+        Hola, esta es mi plantilla!!
+    </H2>
+    {{nombre}}
+    <br>
+    {% if nombre != apellido %}
+        {{"El nombre no coincide con el apellido"}}
+    {% endif %}
+    <br>
+    {% for valor in lista %}
+        <li>
+        {{valor}}
+        </li>
+    {% endfor %}
+{% endblock "body_1" %}
