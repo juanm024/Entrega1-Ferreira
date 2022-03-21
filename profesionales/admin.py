@@ -1,3 +1,7 @@
 from django.contrib import admin
 
-# Register your models here.
+from profesionales.models import Cerrajero, Electricista, Plomero
+
+admin.site.register(Cerrajero)
+admin.site.register(Electricista)
+admin.site.register(Plomero)
